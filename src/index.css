@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Heebo:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +12,7 @@
     }
 
     body {
-        @apply font-sans bg-white text-[1.6rem] h-[300vh];
+        font-family: "Heebo", sans-serif;
     }
 
     li {
@@ -68,5 +70,103 @@
 
     ::-webkit-scrollbar-thumb:hover {
         @apply bg-lightGray;
+    }
+
+    .btn {
+        @apply bg-white text-viridianGreen font-[700] w-max px-[25px] py-[10px] border-[2px] border-white border-solid rounded-md;
+    }
+
+    .btn-secondary:is(:hover, :focus) {
+        @apply bg-transparent text-white;
+    }
+
+    .btn-primary {
+        @apply bg-viridianGreen text-white border-viridianGreen;
+    }
+
+    .btn-primary:is(:hover, :focus) {
+        @apply bg-transparent text-viridianGreen;
+    }
+
+    .btn-outline {
+        @apply text-oxfordBlue border-silverChalice;
+    }
+
+    .btn-outline:is(:hover, :focus) {
+        @apply text-viridianGreen border-viridianGreen;
+    }
+
+    .section {
+        @apply p-10;
+    }
+
+    .section-subtitle {
+        @apply text-mikadoYellow text-[3rem];
+    }
+
+    .h2 {
+        @apply text-jet text-[3rem] font-medium;
+    }
+
+    .h3 {
+        @apply text-jet text-[2.4rem] font-normal;
+    }
+
+    .img-cover {
+        @apply w-full h-full object-cover;
+    }
+
+    .card-banner {
+        @apply bg-silverChalice;
+    }
+
+    :is(.popular, .blog) .section-subtitle {
+        @apply text-center mb-[10px];
+    }
+
+    :is(.popular, .blog) .section-title {
+        @apply text-center mb-[50px];
+    }
+
+    .popular-list,
+    .blog-list {
+        @apply grid gap-[30px];
+    }
+
+    .popular-card,
+    .blog-card {
+        @apply shadow-md rounded-md overflow-hidden;
+    }
+
+    :is(.popular, .blog) .card-banner {
+        @apply relative;
+    }
+
+    .card-badge {
+        @apply absolute top-[10px] left-[10px] bg-mikadoYellow text-white py-[14px] px-[10px] rounded-md;
+    }
+
+    .card-badge ion-icon {
+        @apply w-[60px] text-xl m-auto;
+    }
+
+    .card-badge time {
+        @apply font-bold;
+    }
+
+    :is(.popular, .blog) .card-content {
+        @apply py-[30px] px-[15px];
+    }
+
+    .card-wrapper {
+        @apply flex justify-start items-center gap-5;
+    }
+
+    :is(.popular, .blog) .card-title {
+        @apply text-graniteGray text-[1.8rem] m-5;
+    }
+
+    :is(.popular, .blog) .card-title > a:is(:hover, :focus) {
+        @apply text-viridianGreen;
     }
 }
