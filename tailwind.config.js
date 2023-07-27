@@ -16,7 +16,6 @@ export default {
                 eerieBlack: "hsl(210, 11%, 15%)",
                 lightGray: "hsl(0, 0%, 80%)",
                 white2: "hsl(0, 0%, 98%)",
-                white1: "hsl(0, 0%, 100%)",
                 black: "hsl(0, 0%, 0%)",
                 jet: "hsl(0, 0%, 20%)",
             },

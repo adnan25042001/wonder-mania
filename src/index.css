@@ -6,12 +6,67 @@
     *,
     *::before,
     *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        @apply m-0 p-0 box-border;
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        @apply font-sans bg-white text-[1.6rem] h-[300vh];
+    }
+
+    li {
+        @apply list-none;
+    }
+
+    a {
+        @apply no-underline;
+    }
+
+    a,
+    img,
+    span,
+    input,
+    button {
+        @apply block;
+    }
+
+    input,
+    button {
+        @apply border-none bg-none;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+
+    input {
+        @apply w-full;
+    }
+
+    img {
+        @apply h-auto;
+    }
+
+    :focus-visible {
+        @apply outline-offset-[5px];
+    }
+
+    html {
+        @apply text-[10px] scroll-smooth;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-[10px];
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-white2;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-lightGray;
     }
 }
