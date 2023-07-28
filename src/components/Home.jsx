@@ -6,7 +6,7 @@ import hero from "../assets/images/hero-banner.png";
 
 const Home = () => {
     return (
-        <div className="container px-4 py-20 m-auto relative" id="home">
+        <div className="container px-2 py-10 m-auto relative" id="home">
             <img
                 src={v1}
                 width="61"
@@ -31,19 +31,19 @@ const Home = () => {
                 className="animate hidden md:block absolute md:left-[40%] md:bottom-[20%]"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="w-full px-8 flex flex-col mt-10 sm:mt-40 gap-16">
-                    <p className="text-7xl font-f text-mikadoYellow">
+                <div className="w-full px-8 flex flex-col mt-5 sm:mt-24 gap-8">
+                    <p className="text-[40px] font-f text-mikadoYellow">
                         Explore Your Travel
                     </p>
 
-                    <h2 className="text-7xl sm:text-8xl font-bold text-oxfordBlue">Trusted Travel Agency</h2>
+                    <h2 className="text-5xl sm:text-6xl font-bold text-oxfordBlue">Trusted Travel Agency</h2>
 
-                    <p className="text-3xl text-blackCoral">
+                    <p className="text-xl text-blackCoral">
                         I travel not to go anywhere, but to go. I travel for
                         travel's sake the great affair is to move.
                     </p>
 
-                    <div className="flex gap-5 text-2xl">
+                    <div className="flex gap-4 text-md">
                         <a href="#" className="btn btn-primary">
                             Contact Us
                         </a>
@@ -53,7 +53,7 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex items-center justify-center mt-20 sm:mt-10">
+                <div className="flex items-center justify-center mt-5 sm:mt-0">
                     <img
                         src={hero}
                         alt=""
