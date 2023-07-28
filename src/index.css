@@ -82,6 +82,25 @@
         }
     }
 
+    .image-transition {
+        @apply relative rounded-md overflow-hidden;
+    }
+
+    .image-transition img {
+        @apply transition-all duration-500 transform;
+    }
+
+    .image-transition:hover img {
+        @apply scale-[1.1];
+    }
+
+    .gradiant {
+        background: linear-gradient(
+            hsla(222, 46%, 17%, 0),
+            hsla(222, 46%, 17%, 0.7)
+        );
+    }
+
     .btn {
         @apply bg-white text-viridianGreen font-[700] w-max px-[25px] py-[10px] border-[2px] border-white border-solid rounded-md;
     }

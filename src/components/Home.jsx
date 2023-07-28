@@ -6,7 +6,7 @@ import hero from "../assets/images/hero-banner.png";
 
 const Home = () => {
     return (
-        <div className="container px-4 py-20 m-auto w-full relative">
+        <div className="container px-4 py-20 m-auto relative" id="home">
             <img
                 src={v1}
                 width="61"
@@ -31,24 +31,24 @@ const Home = () => {
                 className="animate hidden md:block absolute md:left-[40%] md:bottom-[20%]"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div class="w-full px-8 flex flex-col mt-10 sm:mt-40 gap-16">
-                    <p class="text-7xl font-f text-mikadoYellow">
+                <div className="w-full px-8 flex flex-col mt-10 sm:mt-40 gap-16">
+                    <p className="text-7xl font-f text-mikadoYellow">
                         Explore Your Travel
                     </p>
 
-                    <h2 class="text-7xl sm:text-8xl font-bold">Trusted Travel Agency</h2>
+                    <h2 className="text-7xl sm:text-8xl font-bold text-oxfordBlue">Trusted Travel Agency</h2>
 
-                    <p class="text-3xl text-blackCoral">
+                    <p className="text-3xl text-blackCoral">
                         I travel not to go anywhere, but to go. I travel for
                         travel's sake the great affair is to move.
                     </p>
 
-                    <div class="flex gap-5 text-2xl">
-                        <a href="#" class="btn btn-primary">
+                    <div className="flex gap-5 text-2xl">
+                        <a href="#" className="btn btn-primary">
                             Contact Us
                         </a>
 
-                        <a href="#" class="btn btn-outline">
+                        <a href="#" className="btn btn-outline">
                             Learn More
                         </a>
                     </div>
