@@ -7,7 +7,7 @@ import d5 from "../assets/images/destination-5.jpg";
 
 const Destinations = () => {
     return (
-        <div className="container px-4 py-20 m-auto" id="destinations">
+        <div className="container px-4 py-28 m-auto" id="destinations">
             <p className="text-7xl font-f text-mikadoYellow text-center">
                 Destinations
             </p>
