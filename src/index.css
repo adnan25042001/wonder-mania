@@ -72,6 +72,16 @@
         @apply bg-lightGray;
     }
 
+    .animate {
+        animation: rotate 7s linear infinite;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
     .btn {
         @apply bg-white text-viridianGreen font-[700] w-max px-[25px] py-[10px] border-[2px] border-white border-solid rounded-md;
     }

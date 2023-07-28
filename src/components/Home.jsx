@@ -2,16 +2,17 @@ import React from "react";
 import v1 from "../assets/images/shape-1.png";
 import v2 from "../assets/images/shape-2.png";
 import v3 from "../assets/images/shape-3.png";
+import hero from "../assets/images/hero-banner.png";
 
 const Home = () => {
     return (
-        <div className="container px-4 py-10 m-auto w-full relative">
+        <div className="container px-4 py-20 m-auto w-full relative">
             <img
                 src={v1}
                 width="61"
                 height="61"
                 alt="Vector Shape"
-                className="animate-spin hidden md:block absolute md:top-[60px] md:left-[47%]"
+                className="animate hidden md:block absolute md:top-[60px] md:left-[47%]"
             />
 
             <img
@@ -19,7 +20,7 @@ const Home = () => {
                 width="56"
                 height="74"
                 alt="Vector Shape"
-                className="animate-spin hidden md:block absolute md:top-[20%] md:right-[50px]"
+                className="animate hidden md:block absolute md:top-[20%] md:right-[50px]"
             />
 
             <img
@@ -27,20 +28,22 @@ const Home = () => {
                 width="57"
                 height="72"
                 alt="Vector Shape"
-                className="animate-spin hidden md:block absolute md:left-[40%] md:bottom-[20%]"
+                className="animate hidden md:block absolute md:left-[40%] md:bottom-[20%]"
             />
-            <div className="flex flex-col md:flex-row">
-                <div class="hero-content">
-                    <p class="section-subtitle">Explore Your Travel</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="w-full px-8 flex flex-col mt-10 sm:mt-40 gap-16">
+                    <p class="text-7xl font-f text-mikadoYellow">
+                        Explore Your Travel
+                    </p>
 
-                    <h2 class="hero-title">Trusted Travel Agency</h2>
+                    <h2 class="text-7xl sm:text-8xl font-bold">Trusted Travel Agency</h2>
 
-                    <p class="hero-text">
+                    <p class="text-3xl text-blackCoral">
                         I travel not to go anywhere, but to go. I travel for
                         travel's sake the great affair is to move.
                     </p>
 
-                    <div class="btn-group">
+                    <div class="flex gap-5 text-2xl">
                         <a href="#" class="btn btn-primary">
                             Contact Us
                         </a>
@@ -49,6 +52,13 @@ const Home = () => {
                             Learn More
                         </a>
                     </div>
+                </div>
+                <div className="flex items-center justify-center mt-20 sm:mt-10">
+                    <img
+                        src={hero}
+                        alt=""
+                        className="sm:w-full w-[70%]"
+                    />
                 </div>
             </div>
         </div>
