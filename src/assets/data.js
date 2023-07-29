@@ -1,8 +1,8 @@
 export const navlinks = [
     "Home",
     "Destinations",
-    "About Us",
     "Tours",
+    "About Us",
     "Blog",
     "Contact Us",
 ];

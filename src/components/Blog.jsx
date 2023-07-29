@@ -6,7 +6,7 @@ import { BsClock, BsStar, BsStarFill } from "react-icons/bs";
 
 const Popular = () => {
     return (
-        <div className="container px-4 py-20 m-auto">
+        <div className="container px-4 py-20 m-auto" id="blog">
             <p className="text-5xl font-f text-mikadoYellow text-center">
                 Featured Tours
             </p>

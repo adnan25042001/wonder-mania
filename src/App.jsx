@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
 import Destinations from "./components/Destinations";
-import Popular from "./components/Popular";
+import Tours from "./components/Tours";
+import AboutUs from "./components/About";
+import Blog from "./components/Blog";
 
 const App = () => {
     return (
@@ -10,7 +12,9 @@ const App = () => {
             <Navbar />
             <Home />
             <Destinations />
-            <Popular />
+            <Tours />
+            <AboutUs />
+            <Blog />
         </div>
     );
 };
