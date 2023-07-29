@@ -38,7 +38,11 @@ const Header = () => {
                     <div className="flex flex-col md:flex-row items-center gap-8  sm:text-lg text-md">
                         {navlinks &&
                             navlinks.map((link) => (
-                                <Navlink key={link} link={link} />
+                                <Navlink
+                                    key={link}
+                                    link={link}
+                                    setToggle={setToggle}
+                                />
                             ))}
                     </div>
                     <button className="btn btn-secondary sm:text-md text-sm">
@@ -47,13 +51,13 @@ const Header = () => {
                 </div>
                 {!toggle && (
                     <HiMenuAlt1
-                        className="Static md:hidden text-white font-bold text-2xl"
+                        className=" cursor-pointer Static md:hidden text-white font-bold text-2xl"
                         onClick={() => setToggle(true)}
                     />
                 )}
                 {toggle && (
                     <HiX
-                        className="static md:hidden text-white font-bold text-2xl"
+                        className="cursor-pointer static md:hidden text-white font-bold text-2xl"
                         onClick={() => setToggle(false)}
                     />
                 )}

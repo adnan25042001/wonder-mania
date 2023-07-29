@@ -5,6 +5,7 @@ import Destinations from "./components/Destinations";
 import Tours from "./components/Tours";
 import AboutUs from "./components/About";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <Tours />
             <AboutUs />
             <Blog />
+            <Footer />
         </div>
     );
 };

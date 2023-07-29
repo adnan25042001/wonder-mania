@@ -7,13 +7,13 @@ const AboutUs = () => {
         <div className="container px-4 py-20 m-auto" id="about us">
             <div className="flex flex-col md:flex-row gap-10">
                 <div className="w-[100%] md:w-[42%] shrink-0">
-                    <p class="text-5xl font-f text-mikadoYellow">About Us</p>
+                    <p className="text-5xl font-f text-mikadoYellow">About Us</p>
 
-                    <h2 class="text-5xl font-bold text-jet my-8">
+                    <h2 className="text-5xl font-bold text-jet my-8">
                         Explore all tour of the world with us.
                     </h2>
 
-                    <p class="text-lg text-battleshipGray mb-10">
+                    <p className="text-lg text-battleshipGray mb-10">
                         Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or
                         randomised words which don't look even slightly

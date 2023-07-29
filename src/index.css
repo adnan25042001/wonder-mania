@@ -101,6 +101,10 @@
         );
     }
 
+    .footer-bg {
+        background-image: url("./assets/images/footer-bg.png");
+    }
+
     .btn {
         @apply bg-white text-viridianGreen font-[700] w-max px-[25px] py-[10px] border-[2px] border-white border-solid rounded-md;
     }

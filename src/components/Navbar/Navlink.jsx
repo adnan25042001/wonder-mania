@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const Navlink = ({ link }) => {
+const Navlink = ({ link, setToggle }) => {
     return (
         <li className="font-medium cursor-pointer hover:text-lightGray">
             <Link
@@ -10,6 +10,7 @@ const Navlink = ({ link }) => {
                 smooth={true}
                 duration={100}
                 offset={-50}
+                onClick={() => setToggle(false)}
             >
                 {link}
             </Link>
